@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tienda.Common\Tienda.Common.csproj" />
+    <ProjectReference Include="..\Tienda.DAL.SQLServer\Tienda.DAL.SQLServer.csproj" />
+  </ItemGroup>
+
+</Project>

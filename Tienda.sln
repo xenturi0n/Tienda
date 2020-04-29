@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tienda.DAL.SQLServer", "Tie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.Test", "Tienda.Test\Tienda.Test.csproj", "{10FF77DC-CC1F-40F5-8010-0B2EB82B9AB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tienda.BLL", "Tienda.BLL\Tienda.BLL.csproj", "{C7F8AA5E-7579-4BC0-9A5D-A1A3A759E0DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{10FF77DC-CC1F-40F5-8010-0B2EB82B9AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10FF77DC-CC1F-40F5-8010-0B2EB82B9AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10FF77DC-CC1F-40F5-8010-0B2EB82B9AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F8AA5E-7579-4BC0-9A5D-A1A3A759E0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F8AA5E-7579-4BC0-9A5D-A1A3A759E0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F8AA5E-7579-4BC0-9A5D-A1A3A759E0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F8AA5E-7579-4BC0-9A5D-A1A3A759E0DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

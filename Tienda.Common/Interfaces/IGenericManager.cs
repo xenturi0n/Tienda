@@ -15,7 +15,7 @@ namespace Tienda.Common.Interfaces
 
         bool Actualizar(T entidad);
 
-        bool Eliminar(T entidad);
+        bool Eliminar(string id);
 
         T BuscarPorId(string id);
 
