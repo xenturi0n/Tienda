@@ -9,6 +9,7 @@ using System.Linq;
 
 namespace Tienda.Test
 {
+    //TODO: capa biz
     [TestClass]
     public class UnitTestDAL
     {
