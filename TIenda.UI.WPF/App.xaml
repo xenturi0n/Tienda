@@ -1,0 +1,82 @@
+﻿<Application x:Class="TIenda.UI.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TIenda.UI.WPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkPrimaryColor">#303F9F</Color>
+            <Color x:Key="LightPrimaryColor">#C5CAE9</Color>
+            <Color x:Key="PrimaryColor">#3F51B5</Color>
+            <Color x:Key="TextIcons">#FFFFFF</Color>
+            <Color x:Key="AccentColor">#009688</Color>
+            <Color x:Key="PrimaryText">#212121</Color>
+            <Color x:Key="SecondaryText">#757575</Color>
+            <Color x:Key="DividerColor">#BDBDBD</Color>
+            <Color x:Key="AlertColor">#D32F2F</Color>
+            <Color x:Key="AlertColorLight">#F44336</Color>
+            <Color x:Key="AlertColorExtraLight">#FFCDD2</Color>
+
+            <SolidColorBrush x:Key="BrushDarkPrimaryColor" Color="{StaticResource DarkPrimaryColor}"/>
+            <SolidColorBrush x:Key="BrushLightPrimaryColor" Color="{StaticResource LightPrimaryColor}"/>
+            <SolidColorBrush x:Key="BrushPrimaryColor" Color="{StaticResource PrimaryColor}"/>
+            <SolidColorBrush x:Key="BrushTextIcons" Color="{StaticResource TextIcons}"/>
+            <SolidColorBrush x:Key="BrushAccentColor" Color="{StaticResource AccentColor}"/>
+            <SolidColorBrush x:Key="BrushPrimaryText" Color="{StaticResource PrimaryText}"/>
+            <SolidColorBrush x:Key="BrushSecondaryText" Color="{StaticResource SecondaryText}"/>
+            <SolidColorBrush x:Key="BrushDividerColor" Color="{StaticResource DividerColor}"/>
+            <SolidColorBrush x:Key="BrushAlertColor" Color="{StaticResource AlertColor}"/>
+            <SolidColorBrush x:Key="BrushAlertColorLight" Color="{StaticResource AlertColorLight}"/>
+            <SolidColorBrush x:Key="BrushAlertColorExtraLight" Color="{StaticResource AlertColorExtraLight}"/>
+
+            <Style TargetType="GridSplitter">
+                <Setter Property="Foreground" Value="{StaticResource BrushPrimaryText}"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="Height" Value="24"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="TextBox">
+                <Setter Property="Height" Value="24"/>
+                <Setter Property="VerticalAlignment" Value="24"/>
+                <Setter Property="Width" Value="100"/>
+            </Style>
+
+            <Style TargetType="PasswordBox">
+                <Setter Property="Height" Value="24"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Width" Value="100" />
+            </Style>
+
+            <Style TargetType="ComboBox">
+                <Setter Property="Height" Value="24"/>
+            </Style>
+
+            <Style TargetType="DataGrid">
+                <Setter Property="IsReadOnly" Value="True"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="LabelTitulo">
+                <Setter Property="Background" Value="{StaticResource BrushPrimaryColor}"/>
+                <Setter Property="Foreground" Value="{StaticResource BrushTextIcons}"/>
+                <Setter Property="FontStyle" Value="Italic"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
+
+            <Viewbox x:Shared="false" x:Key="iconAdd">
+                <Grid Width="48" Height="48" Visibility="Visible">
+                    <Path Data="M54 0.666626C24.56 0.666626 0.666664 24.56 0.666664 54C0.666664 83.44 24.56 107.333 54 107.333C83.44 107.333 107.333 83.44 107.333 54C107.333 24.56 83.44 0.666626 54 0.666626ZM80.6667 59.3333H59.3333V80.6666H48.6667V59.3333H27.3333V48.6666H48.6667V27.3333H59.3333V48.6666H80.6667V59.3333Z" Fill="{StaticResource BrushTextIcons}"/>
+                </Grid>
+            </Viewbox>
+
+            <Viewbox x:Shared="false" x:Key="iconCancel">
+                
+            </Viewbox>
+        </ResourceDictionary>
+         
+    </Application.Resources>
+</Application>

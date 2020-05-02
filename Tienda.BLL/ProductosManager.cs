@@ -38,7 +38,17 @@ namespace Tienda.BLL
 
         public IEnumerable<Productos> BuscarProductosPorNombre(string criterio)
         {
-            throw new NotImplementedException();
+            try
+            {
+                IEnumerable<Productos> r = _repositorio.Query(p => p.Nombre.ToLower().Contains(criterio.ToLower()));
+                Error = "";
+                return r;
+            }
+            catch (Exception ex)
+            {
+                Error = ex.Message;
+                return null;
+            }
         }
     }
 }
