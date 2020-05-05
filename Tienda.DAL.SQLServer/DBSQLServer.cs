@@ -13,9 +13,9 @@ namespace Tienda.DAL.SQLServer
         private SqlConnection _conexion;
         public DBSQLServer()
         {
-            string _server = "LENOVO-Y700\\TEW_SQLEXPRESS";
+            string _server = "INFORMATICA\\SQLEXPRESS";
             string _database = "Tienda";
-            string _uid ="appTienda";
+            string _uid = "appTienda";
             string _password = "16123356";
 
             _conexion = new SqlConnection($"Server={_server};Database={_database};User Id={_uid};Password={_password}");
