@@ -4,9 +4,28 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TIenda.UI.WPF"
+        xmlns:menu="clr-namespace:HamburgerMenu;assembly=HamburgerMenu"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <menu:HamburgerMenu Grid.Row="0" Grid.Column="0" 
+                            Background="{StaticResource BrushPrimaryColor}" 
+                            MenuItemForeground="{StaticResource BrushPrimaryColor}"
+                            MenuIconColor="{StaticResource BrushTextIcons}"
+                            SelectionIndicatorColor="{StaticResource BrushAccentColor}">
+            <menu:HamburgerMenuItem Text="Home" Icon="{StaticResource iconShop2}">
+                
+            </menu:HamburgerMenuItem>
+        </menu:HamburgerMenu>
     </Grid>
 </Window>

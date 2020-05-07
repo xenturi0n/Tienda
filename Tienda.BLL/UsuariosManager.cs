@@ -20,8 +20,17 @@ namespace Tienda.BLL
             try
             {
                 Usuarios r = _repositorio.Query(u => u.NombreDeUsuario == nombreDeUsuario && u.Password == password).SingleOrDefault();
-                Error = "";
-                return r;
+
+                if (r == null)
+                {
+                    Error = "Nombre de usuario o contraseña incorrectos.";
+                    return null;
+                }
+                else
+                {
+                    Error = "";
+                    return r;
+                }                
             }
             catch (Exception ex)
             {
